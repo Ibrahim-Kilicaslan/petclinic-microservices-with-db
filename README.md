@@ -3393,7 +3393,7 @@ mkdir nexus-optional && cd nexus-optional/
 - Get the link address of `spring-petclinic-admin-server-2.1.2.jar` file and download it.
 
 ```bash
-curl -u admin:123  -L -X GET  http://34.228.221.228:8081/repository/maven-releases/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.1.2/spring-petclinic-admin-server-2.1.2.jar --output admin.jar
+curl -u admin:123  -L -X GET  http://54.196.178.61:8081/repository/maven-releases/org/springframework/samples/petclinic/admin/spring-petclinic-admin-server/2.1.2/spring-petclinic-admin-server-2.1.2.jar --output admin.jar
 ```
 
 - Create a Docker file for admin-server.
@@ -3542,6 +3542,7 @@ rancher --version
 - password: Secret Key
 - id: rancher-petclinic-credentials
 ```
+token-sgx9b:4ss45kd7spzdkh7nbvf8dx6drggxrr5l2kzhd6jswvwc42mhmkqmkn
 
 * Prepare a Jenkinsfile for `petclinic-staging` pipeline and save it as `jenkinsfile-petclinic-staging` under `jenkins` folder.
 
